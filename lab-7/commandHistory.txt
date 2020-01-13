@@ -1,0 +1,17 @@
+plot --xaxis 1 --xaxis-mode horizontal  --yaxis-left 2 --yaxis-right 3 --yaxis-top 2 --csv-file-path c++/cmake-debug-tools/naive.csv --mode mean 
+plot --xaxis 1 --xaxis-mode horizontal  --yaxis-left 2 --yaxis-right 3 --yaxis-top 2 --csv-file-path c++/cmake-build-debug/naive.csv --mode mean 
+exit
+plot --csv-file-path c++/cmake-build-debug/naive.csv --xaxis-mode horizontal --xaxis 1 --yaxis-left 2 --yaxis-right 3 --yaxis-top 1 --yaxis-bottom 100 --select-top 5
+exit
+plot --csv-file-path c++/cmake-build-debug/naive.csv --xaxis-mode horizontal --xaxis 0 --yaxis-left 1 --yaxis-right 2 --yaxis-top 1 --yaxis-bottom 100 --select-top 5
+plot --csv-file-path c++/cmake-build-debug/naive.csv --xaxis-mode horizontal --xaxis 0 --yaxis-left 1 --yaxis-right 2 --yaxis-top 1
+plot --csv-file-path c++/cmake-build-debug/naive.csv --xaxis-mode horizontal --xaxis 0 --yaxis-left 1 --yaxis-right 2 --yaxis-top 1 --yaxis-bottom 10000 --mode mean 
+plot --csv-file-path c++/cmake-build-debug/naive.csv --xaxis-mode horizontal --xaxis 0 --yaxis-left 1 --yaxis-right 2 --yaxis-top 1 --yaxis-bottom 10000 --box-plot 1
+plot --csv-file-path c++/cmake-build-debug/naive.csv --xaxis-mode horizontal --xaxis 0 --yaxis-left 1 --yaxis-right 2 --yaxis-top 1 --yaxis-bottom 10000 --box-plot 1 --title C++_Naive --xlabel Philosopher --ylabel Access_time_[us]
+plot --csv-file-path c++/cmake-build-debug/naive.csv --xaxis-mode horizontal --xaxis 0 --yaxis-left 1 --yaxis-right 2 --yaxis-top 1 --yaxis-bottom 10000 --box-plot 1 --title C++_Naive --ylabel Philosopher --xlabel Access_time_[us]
+plot --csv-file-path c++/cmake-build-debug/starve.csv --xaxis-mode horizontal --xaxis 0 --yaxis-left 1 --yaxis-right 2 --yaxis-top 1 --yaxis-bottom 10000 --box-plot 1 --title C++_Starvation --ylabel Philosopher --xlabel Access_time_[us]
+plot --csv-file-path c++/cmake-build-debug/asymmetric.csv --xaxis-mode horizontal --xaxis 0 --yaxis-left 1 --yaxis-right 2 --yaxis-top 1 --yaxis-bottom 10000 --box-plot 1 --title C++_Asymmetric --ylabel Philosopher --xlabel Access_time_[us]
+plot --csv-file-path c++/cmake-build-debug/waiter.csv --xaxis-mode horizontal --xaxis 0 --yaxis-left 1 --yaxis-right 2 --yaxis-top 1 --yaxis-bottom 10000 --box-plot 1 --title C++_Waiter --ylabel Philosopher --xlabel Access_time_[us]
+plot --csv-file-path node-js/starve.csv --xaxis-mode horizontal --xaxis 0 --yaxis-left 1 --yaxis-right 2 --yaxis-top 1 --yaxis-bottom 10000 --box-plot 1 --title NodeJS_Starvation --ylabel Philosopher --xlabel Access_time_[us]
+plot --csv-file-path node-js/asymmetric.csv --xaxis-mode horizontal --xaxis 0 --yaxis-left 1 --yaxis-right 2 --yaxis-top 1 --yaxis-bottom 10000 --box-plot 1 --title NodeJS_Asymmetric --ylabel Philosopher --xlabel Access_time_[us]
+plot --csv-file-path node-js/waiter.csv --xaxis-mode horizontal --xaxis 0 --yaxis-left 1 --yaxis-right 2 --yaxis-top 1 --yaxis-bottom 10000 --box-plot 1 --title NodeJS_Waiter --ylabel Philosopher --xlabel Access_time_[us]
